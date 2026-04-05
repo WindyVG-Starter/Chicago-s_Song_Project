@@ -1,0 +1,48 @@
+:: StoryTitle
+Chicago Land
+
+
+:: StoryData
+{
+  "ifid": "68C2CD57-BD5D-4CF7-B869-EA2487D3F484",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "tag-colors": {
+    "Menu": "orange"
+  },
+  "zoom": 1
+}
+
+
+:: Start [Menu] {"position":"525,175","size":"100,100"}
+<div class="text_box" style="font-family: 'Courier New'; text-align: center; font-size: 50px;">
+Chicago's Songs
+</div>
+
+
+
+:: Untitled Passage {"position":"675,125","size":"100,100"}
+
+
+
+:: menu-bg {"position":"925,175","size":"100,100"}
+
+
+
+:: StoryStylesheet [stylesheet]
+tw-story[tags~="Menu"] 
+{
+  background-image:url("https://cdn.pixabay.com/photo/2016/02/29/23/06/chicago-1229463_1280.jpg");
+  background-size:cover; 
+}
+
+.text_box {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
