@@ -1,0 +1,345 @@
+:: StoryTitle
+Chicago Land
+
+
+:: StoryData
+{
+  "ifid": "68C2CD57-BD5D-4CF7-B869-EA2487D3F484",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "First",
+  "tag-colors": {
+    "Menu": "orange",
+    "Hospital": "green",
+    "NextPage": "green",
+    "Nexthospital": "blue"
+  },
+  "zoom": 1
+}
+
+
+:: Credits {"position":"700,175","size":"100,100"}
+<img src="https://cdn.pixabay.com/photo/2016/02/29/23/06/chicago-1229463_1280.jpg" style="width: 500px; height: auto;"> 
+Art made by LeoR, found on https://pixabay.com/illustrations/chicago-skyline-composite-1229463/
+<!-- Use this format to better support ''Raw Twine harlowe'' because I guess there is a difference. -->
+
+
+<img src="https://cdn.pixabay.com/photo/2015/09/03/17/49/hospital-921034_1280.jpg" style="width: 500px; height: auto;"> 
+Art made by ClaudiaWollesen, found on https://pixabay.com/photos/hospital-hospital-aisle-921034/
+
+
+
+
+
+
+|returnbtn>[ [[RETURN->Start]] ]
+
+
+
+
+:: First [Hospital] {"position":"600,350","size":"100,100"}
+<div class="textBubble">
+<span style="font-size: 32px; font-weight: bold;">
+Random doctors and nurses:
+</span>
+
+  "Note, date and time of death."
+  
+  "March 11, 2024. Time 5:39pm."</p>   <!-- This whole text is HTML, the </p> is a bulit in space -->
+ </div>
+ 
+ <div class="SelfBubble">
+ Those words were the last thing you heard. You remember how your hospital room were filled with death, the sound of patients coughing passing by, medical equipments beeping every second you try to fall asleep, and the cold air always blowing your face. You hate it, everything.
+  </div>
+  
+  <span class="next-button">
+    (link-goto: "NEXT", "Nexthospital")
+  </span>
+  
+
+
+:: Nexthospital [Nexthospital] {"position":"600,475","size":"100,100"}
+ <div class="dialogue">
+You try to 
+  </div>
+  
+
+
+:: Start [Menu] {"position":"525,175","size":"100,100"}
+<div class="text_box" style="font-family: 'Courier New'; text-align: center; font-size: 50px;">
+Chicago's Songs
+
+<br><br>
+
+<div class="button-row">
+
+  <span class="start-button">
+    (link-goto: "START", "First")
+  </span>
+  
+  <span class="credits-button">
+    (link-goto: "CREDITS", "Credits")
+  </span>
+  
+  </div>
+  
+</div>
+
+
+
+
+
+
+:: StoryStylesheet [stylesheet]
+tw-sidebar 
+{
+  display: none; 
+}
+
+tw-story[tags~="Menu"] 
+{
+  background-image:url("https://cdn.pixabay.com/photo/2016/02/29/23/06/chicago-1229463_1280.jpg");
+  background-size:cover; 
+}
+
+
+
+
+
+.text_box {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px; /*This makes the inside of the box bigger or smaller */
+  border-radius: 10px;
+  width: 550px;  
+  height:  300px 600px; /* This is where I can resize the sides */
+  margin: 40px auto;
+  
+  
+}
+
+
+
+
+.start-button 
+{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  
+
+  width: 150px;  
+  height:  12px 10px;
+  
+  border-radius: 8px;
+  text-decoration: none;
+  
+  font-size: 30px;
+  font-weight: bold;
+  
+  transition: 0.3s;
+}
+
+.start-button:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+
+
+
+
+.credits-button
+{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  
+  
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  
+
+  width: 150px;  
+  height: 10px 10px; /*top and bottom (vertical padding) and the second one is left and right (horizontal padding)*/
+ 
+  
+  border-radius: 8px;
+  text-decoration: none;
+  
+  font-size: 30px;
+  font-weight: bold;
+  
+  transition: 0.3s;
+}
+
+.button-row 
+{
+  display: flex;
+  justify-content: center;  /* centers the group */
+  gap: 20px;                /* space between buttons */
+  margin-top: 30px;
+}
+
+
+.credits-button:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+
+
+
+
+tw-hook[name="returnbtn"] tw-link 
+{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  
+
+  width: 150px;  
+  height:  12px 10px;
+  
+  border-radius: 8px;
+  text-decoration: none;
+  
+  font-size: 25px;
+  font-weight: bold;
+  
+  transition: 0.3s;
+}
+
+tw-hook[name="returnbtn"] tw-link:hover {
+  background-color: Black;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+/* This part is for the hospital level*/
+tw-story[tags~="Hospital"] 
+{
+  background-image:url("https://cdn.pixabay.com/photo/2015/09/03/17/49/hospital-921034_1280.jpg");
+  background-size:cover;
+  animation: fadein 100s;
+}
+
+.textBubble {
+  display: block;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 10px 50px;
+
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 12px;
+
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.SelfBubble {
+  display: block;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px 50px;
+
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 0px;
+
+  color: white;
+  font-family: Times New Roman;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+
+  
+}
+
+
+.next-button 
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 140px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+
+.next-button:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+
+
+
+
+/* This part is for the hospital level part 2*/
+tw-story[tags~="Nexthospital"]::before   /*First layer*/
+{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Puts it behind everything */
+  
+  background-image:url("https://cdn.pixabay.com/photo/2015/09/03/17/49/hospital-921034_1280.jpg");
+  background-size:cover;
+  
+  filter: brightness(0.3);
+  
+  animation: fadein 100s;
+}
+
+
+/* This ensures the story container itself is transparent 
+   so we can see the background behind it */
+tw-story[tags~="Nexthospital"] {
+  background: transparent;
+}
+
+.dialogue {
+
+  /*Determine the shapes, size where it sits in screen*/
+  display: block; /*A solid shape*/  
+  max-width: 500px; 
+  margin: 10px auto;
+  padding: 10px 50px;
+
+  background-color: rgba(0, 0, 0, 0.85); /* Slightly transparent black */
+  border-radius: 0px;
+
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+
+  /*This forces the text box to be in front*/
+  position: relative;   
+  z-index: 999;        
+
+}
