@@ -1,0 +1,1591 @@
+:: StoryTitle
+Chicago Land
+
+
+:: StoryData
+{
+  "ifid": "68C2CD57-BD5D-4CF7-B869-EA2487D3F484",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Hospitalplace",
+  "tag-colors": {
+    "Menu": "orange",
+    "Hospital": "green",
+    "NextPage": "green",
+    "Nexthospital": "blue",
+    "Choice12": "purple",
+    "Continue": "green",
+    "Leavespace": "purple",
+    "Firstdorm": "blue",
+    "yourbedroom": "green",
+    "A_Family_photo": "red",
+    "Toy_Piano": "blue",
+    "Cloest": "blue",
+    "Manu_script": "green",
+    "LoverPhoto": "purple",
+    "exitdorm": "green",
+    "hospitalplace": "purple",
+    "hospitalbed": "green",
+    "sleepcode": "blue",
+    "Nope": "orange"
+  },
+  "zoom": 0.6
+}
+
+
+:: Choice1 [A_Family_photo] {"position":"725,875","size":"100,100"}
+<div class="Choice1dialogue">
+You chose the pile of family photos. Many contains people that is unfamiliar, but despite the blurred faces, you feel a sense of warmth as you run your thumb across surface of the paper.
+ </div>
+ 
+ <div class="Choice1dialogue">
+You continue flipping through the pile of family photos, finding hundred of captured moments. Everyone is caught mid-action, absorbed in their own lives, eating together, laughing until there were tears, until you pause, spotting a handwritten letter underneath the last one.
+ </div>
+ 
+  <div class="Choice1dialogue">
+"Mom and your Aunty Meggie, will be gone for while. Your Aunty Meggie wanted to go to that Harry Potter, so I'm going to take her there. Your sister will be watching you, and there's leftover spaghetti in the fridge. Don't put it in the oven!!"
+ </div>
+ 
+ 
+   </div>
+ 
+ <div class="Yourbedroom_choices">
+  
+  <span class="_choices2">
+    (link-goto: "A Toy piano" , "Choice2")
+  </span>
+  
+    <span class="_choices3">
+    (link-goto: "The cloest full of toys" , "Choice3")
+  </span>
+  
+  </div>
+  
+</div>
+
+
+
+:: Choice12 [Choice12] {"position":"600,600","size":"100,100"}
+ <div class="Nochoice">
+Regardless, any of your answers have no meaning now. This is the end, there is nothing for you to go back for. Nothing to fear or cry. Now come, follow me and I will take you where you need to be.
+  </div>
+  
+   <span class="Followbutton">
+    (link-goto: "Follow", "Followpath")
+  </span>
+  
+  <audio autoplay loop style ="display:none">
+<source src="https://raw.githubusercontent.com/WindyVG-Starter/Chicago-s_Song_Project/main/music/SadHospital.mp3" type="audio/mpeg">
+</audio>
+
+
+:: Choice2 [Toy_Piano] {"position":"850,875","size":"100,100"}
+<div class="Choice2dialogue">
+You accidentally stepped on a toy piano, echoing a squeaky chime. You immediately stopped, observating closer than before.
+ </div>
+ 
+ <div class="Choice2dialogue">
+"Wait." Your voice rings out from your throat, surpising you a bit but not enough to stop you from kneeling, letting your fingers toys the keys.
+ </div>
+ 
+ <div class="Choice2dialogue">
+Each press hums a tune of the somewhere in the past. Regardless, how silly it sounds, it feels like you belong here, pressing every high and low keys, listening endlessly to a melody you can't seem to remember well. 
+You paused, A voice begins to rise, soft at first, then grow clearer and closer, until it settles into that of a an older woman, gentle and maternal.
+ </div>
+ 
+  <div class="Choice2dialogue">
+"This is the sharp key, and this, is the flat key."
+ </div>
+ 
+   <div class="Choice2dialogue">
+"Grandpa said that music won't place a roof over your head, but you don’t gotta worry about that."
+ </div>
+ 
+    <div class="Choice2dialogue">
+"Mama got you."
+ </div>
+ 
+ 
+    </div>
+ 
+ <div class="Yourbedroom_choices">
+  
+  <span class="_choices1">
+    (link-goto:  "A pile of family photos" , "Choice1")
+  </span>
+  
+    <span class="_choices3">
+    (link-goto: "The cloest full of toys" , "Choice3")
+  </span>
+  
+  </div>
+  
+</div>
+
+
+:: Choice3 [Cloest] {"position":"975,875","size":"100,100"}
+<div class="Choice3dialogue">
+The cloest; built only to contain crowded toys, clothes and other unnecessary things that children would not think much about. You step closer, easing the wooden door open, only to burst at the face with a bright, white light.
+ </div>
+ 
+     <span class="gochildhoodhomebutton ">
+    (link-goto: "-->", "College")
+  </span>
+
+
+:: College [Firstdorm] {"position":"1175,725","size":"100,100"}
+<div class="urvoice">
+Within a blink of an eye, you appear in a messy college dorm. The walls was nearly covered with assignments, prints and sticky notes, the bed's sheet was uneven, and its lovely pillow, on the hard, wooden floor. The desk contain a open laptop, with some folders and notebooks, open and spread against the desk. You observed the room once more, you spot:
+
+ </div>
+ 
+ <div class="Collegechoicesbuttons">
+
+  <span class="college1button">
+    (link-goto: "A Manuscript paper", "Manuscriptpaper")
+  </span>
+  
+  <span class="college2button">
+    (link-goto: "A photo frame" , "Photoframe")
+  </span>
+  
+    <span class="college3button">
+    (link-goto: "A dorm door" , "ExitDoor")
+  </span>
+  
+  </div>
+  
+</div>
+
+
+
+:: Credits {"position":"700,175","size":"100,100"}
+<img src="https://cdn.pixabay.com/photo/2016/02/29/23/06/chicago-1229463_1280.jpg" style="width: 500px; height: auto;"> 
+Art made by LeoR, found on https://pixabay.com/illustrations/chicago-skyline-composite-1229463/
+<!-- Use this format to better support ''Raw Twine harlowe'' because I guess there is a difference. -->
+
+
+<img src="https://cdn.pixabay.com/photo/2015/09/03/17/49/hospital-921034_1280.jpg" style="width: 500px; height: auto;"> 
+Art made by ClaudiaWollesen, found on https://pixabay.com/photos/hospital-hospital-aisle-921034/
+
+
+<img src="https://raw.githubusercontent.com/WindyVG-Starter/Chicago-s_Song_Project/refs/heads/main/Pictures/Childhood_bedroom.jpg" style="width: 500px; height: auto;">
+Photo createn by Shiona Das, they can be found on https://unsplash.com/@shionadas
+
+
+<img src="https://cdn.pixabay.com/photo/2022/12/19/17/18/photos-7666143_1280.jpg" style="width: 500px; height: auto;">
+Photo created by fotoblend, they can be found on https://pixabay.com/users/fotoblend-87167/
+
+|returnbtn>[ [[RETURN->Start]] ]
+
+
+
+
+:: ExitDoor [exitdorm] {"position":"1175,600","size":"100,100"}
+<div class=exitdormdialogue ">
+You come face to face with a nicely decorated door. Its surface is covered with handmade DIY pieces and prints featuring a few famous artists and singers.
+ </div>
+ 
+<div class=exitdormdialogue ">
+You firmly grab the handle of the dorm door, before twisting it open.
+ </div>
+ 
+ 
+     <span class="gochildhoodhomebutton ">
+    (link-goto: "-->", "Hospitalplace")
+  </span>
+
+
+:: First [Hospital] {"position":"600,350","size":"100,100"}
+ <div class="Random_doctors_and_nurses">
+<p>Random doctors and nurses:<p>
+  <p>"Note, date and time of death." 
+   "March 11, 2024. Time 5:39pm."<p>
+
+</div>
+
+ 
+ <div class="SelfBubble">
+ Those words were the last thing you heard before you stop hearing at all. 
+  </div>
+  
+  <span class="next-button">
+    (link-goto: "NEXT", "Nexthospital")
+  </span>
+  
+  
+  <audio autoplay loop style ="display:none">
+<source src="https://raw.githubusercontent.com/WindyVG-Starter/Chicago-s_Song_Project/main/music/SadHospital.mp3" type="audio/mpeg">
+</audio>
+
+
+:: Followpath [Continue] {"position":"600,725","size":"100,100"}
+<div class="Followchat">
+You start to walk, well, more like dragging your feet. Every step feels like a strong force is pushing you backward, aiming to keep you where you are, instead of following.
+ </div>
+
+ <div class="Followchat">
+You can't help but feel as if something is out of place. You lift your chin, wondering who this person you're speaking to, but you came face with nothing but an eerie, pit-black space, with only a few breeze creeping wiping your sweat. As you open your mouth to speak, a sudden sound, no, a music note, faintly brushes against your ear.
+ </div>
+ 
+    <span class="Leavebutton">
+    (link-goto: "-->", "Leavespace")
+  </span>
+  
+  
+  <audio autoplay loop style ="display:none">
+<source src="https://raw.githubusercontent.com/WindyVG-Starter/Chicago-s_Song_Project/main/music/SadHospital.mp3" type="audio/mpeg">
+</audio>
+
+
+:: Hospitalbed [Hospital hospitalbed] {"position":"1300,875","size":"100,100"}
+ <div class="Beddialogue">
+The moment you step your feet forward, the walls begin to scatter, rebuilding itself back up into a eerie, small room, with a single, yellow light shooting above the hospital bed. 
+ </div>
+ 
+  <div class="Beddialogue">
+You hesitant, scanning the bedtable, full of flowers. A huge medical mechanic, beeping softly, and a rocking chair with a knitted blanket, suggests someone has been sleeping there, waiting.
+ </div>
+ 
+ 
+ 
+     </div>
+ 
+ <div class="Yourbedroom_choices">
+  
+  <span class="Sleepbutton">
+    (link-goto:  "Sleep in the bed" , "Sleep")
+  </span>
+  
+    <span class="Nahbutton">
+    (link-goto: "Wait" , "Nah")
+  </span>
+  
+  </div>
+  
+</div>
+
+
+:: Hospitalplace [hospitalplace] {"position":"1175,875","size":"100,100"}
+ <div class="Beddialogue">
+The moment the door opens, you are immediately surrounded in a cold, sterile, reflective hall. The same hospital that you ran from.
+ </div>
+ 
+ <div class="Beddialogue">
+You freeze, feeling every chills creep up your arm. You stared into the abyss, permitting the darkness call out to you. You gulp, slowly stepping forward. Even though, you don't understand.
+ </div>
+ 
+ 
+      <span class="gochildhoodhomebutton ">
+    (link-goto: "-->", "Hospitalbed")
+  </span>
+
+
+:: Leavespace [Leavespace] {"position":"725,725","size":"100,100"}
+<div class="StoppingADippingchat">
+You stop dead in your track, turning behind to meet nothing. However, you keep hearing  the music, softly echoing, yearning for a piece of your attention.
+ </div>
+ 
+ 
+ <div class="Voicechat">
+Don't go, if you do. You will never want to leave.
+ </div>
+ 
+ <div class="StoppingADippingchat">
+You continue to stare at the direction of the sound. With enough thought and gut, you rip away from pathway of the voice, jogging towards the ever growing music.
+ </div>
+ 
+ 
+    <span class="gochildhoodhomebutton ">
+    (link-goto: "-->", "YourRoom")
+  </span>
+  
+  
+  <audio autoplay loop style ="display:none">
+<source src="https://raw.githubusercontent.com/WindyVG-Starter/Chicago-s_Song_Project/main/music/SadHospital.mp3" type="audio/mpeg">
+</audio>
+
+
+:: Manuscriptpaper [Manu_script] {"position":"1050,600","size":"100,100"}
+<div class=Manuscriptpaper1dialogue ">
+You grabbed the manu script, and holy crap, it was a mess.
+ </div>
+ 
+<div class=Manuscriptpaper1dialogue ">
+The longer you stares, the sooner, the music sheets becomes align, shaping them themselves into a language that flows effortlessly through your mind.
+ </div>
+ 
+ <div class=Manuscriptpaper1dialogue ">
+In the corner of the script, a comment labeled by someone called "David''
+ </div>
+ 
+ <div class=Manuscriptpaper1dialogue ">
+"Very common mistakes" David noted. "“You’ve ignored the fundamental logic of rhythmic grouping and beaming. Creatied the script unorganized and difficulted to read. Take your time."
+ </div>
+ 
+<div class=Manuscriptpaper1dialogue ">
+Ah yes, David. The one good professor that offers good feedbacks, and often engages with his students. This university is known for large lecture halls, which is often hard for true one-on-one interaction, but he somehow makes it possible, often goes on his way to reach and email students. Some said he's doing too much, but I think he's doing enough.
+ </div>
+ 
+ 
+     </div>
+ 
+ <div class="Yourbedroom_choices">
+  
+  <span class="_choices1">
+    (link-goto:  "Photo frame" , "Photoframe")
+  </span>
+  
+    <span class="_choices3">
+    (link-goto: "Dorm Door" , "ExitDoor")
+  </span>
+  
+  </div>
+  
+</div>
+
+
+:: Nah [Nope] {"position":"1375,1025","size":"100,100"}
+<div class="narrativedialogue">
+In the end, there was nothing.
+ </div>
+ 
+ <div class="narrativedialogue">
+Do you regret reliving this? Those memories, those people, and you? Do you want them? Do you want me to take them away? I can.
+ </div>
+ 
+  
+      </div>
+ 
+ <div class="Beddialogue">
+  
+  <span class="Nobutton">
+    (link-goto:  ' "No. I want them"' , "No")
+  </span>
+  
+    <span class="Yesbutton">
+    (link-goto: ' "Yes. I dont need them"' , "Yes")
+  </span>
+  
+  </div>
+  
+</div>
+
+
+:: Nexthospital [Nexthospital] {"position":"600,475","size":"100,100"}
+ <div class="dialogue">
+Do you remember your name? Do you even remember what you last ate? 
+  </div>
+
+<div class="button-row">
+
+  <span class="Choice1button">
+    (link-goto: '"No."', "Choice12")
+  </span>
+  
+  <span class="Choice2button">
+    (link-goto: ' "Where am I?" ', "Choice12")
+  </span>
+  
+  </div>
+  
+</div>
+
+<audio autoplay loop style ="display:none">
+<source src="https://raw.githubusercontent.com/WindyVG-Starter/Chicago-s_Song_Project/main/music/SadHospital.mp3" type="audio/mpeg">
+</audio>
+
+
+:: No {"position":"1250,1200","size":"100,100"}
+<div class="yourdialogue">
+There was nothing, but a empty space. 
+ </div>
+ 
+   <div class="narrativedialogue">
+If you say so. You will contunie on this path, with memories of the past that will come with you. The love of your passions and experiences will challenge you, but if it’s what you truly want, then so it shall be.
+ </div>
+ 
+ <div class="yourdialogue">
+Ending 1
+ </div>
+
+
+:: Photoframe [LoverPhoto] {"position":"1300,600","size":"100,100"}
+<div class=PhotoFramedialogue ">
+You switch your attention to the simple photo. You gently presses against the fragile picture, scanning over the pretty lady with a beaming, lively, face. Everytime you blink at her, the more you begin to love and, oddly, feel an endearing sense of annoyance.
+</div>
+ 
+ <div class=PhotoFramedialogue ">
+ "She always takes bad pictures of me every time she gets."
+ </div>
+ 
+ <div class=PhotoFramedialogue ">
+ "One random day. We got into a augement over something dumb, then she said something even dumber."
+ </div>
+ 
+  <div class=PhotoFramedialogue ">
+ "She said 'If I'm always on your mind and worrying you about my free spirit, you might as well marry me.' "
+ </div>
+ 
+ <div class=PhotoFramedialogue ">
+ "What a odd way to say that your sign is a sagittarius."
+ </div>
+ 
+ 
+      </div>
+ 
+ <div class="Yourbedroom_choices">
+  
+  <span class="_choices1">
+    (link-goto:  "A Manuscript paper" , "Manuscriptpaper")
+  </span>
+  
+    <span class="_choices3">
+    (link-goto: "Dorm Door" , "ExitDoor")
+  </span>
+  
+  </div>
+  
+</div>
+
+
+:: Sleep [sleepcode] {"position":"1225,1025","size":"100,100"}
+<div class="yourdialogue">
+You trail your feet to the side of the bed, touching the jersey knit sheets before lifing your body weight, into the stiff surface. You place your hands above your abdomen, staring up to the ceiling, hearing nothing but your thoughts, until.
+ </div>
+ 
+ <div class="narrativedialogue">
+In the end, there was nothing.
+ </div>
+ 
+ <div class="yourdialogue">
+You didn't bother turning to the direction of that voice, besides, you don't even know where its yalpping is coming from.
+ </div>
+ 
+  <div class="narrativedialogue">
+Do you regret reliving this? Those memories, those people, and you? Do you want them? Do you want me to take them away? I can.
+ </div>
+ 
+ 
+      </div>
+ 
+ <div class="Beddialogue">
+  
+  <span class="Nobutton">
+    (link-goto:  ' "No. I want them"' , "No")
+  </span>
+  
+    <span class="Yesbutton">
+    (link-goto: ' "Yes. I dont need them"' , "Yes")
+  </span>
+  
+  </div>
+  
+</div>
+
+
+:: Start [Menu] {"position":"525,175","size":"100,100"}
+<div class="text_box" style="font-family: 'Courier New'; text-align: center; font-size: 40px;">
+Chicago's Last Song for You
+
+<br><br>
+
+<div class="button-row">
+
+  <span class="start-button">
+    (link-goto: "START", "First")
+  </span>
+  
+  <span class="credits-button">
+    (link-goto: "CREDITS", "Credits")
+  </span>
+  
+  </div>
+  
+</div>
+
+
+
+
+
+
+:: Yes {"position":"1375,1200","size":"100,100"}
+<div class="yourdialogue">
+There was nothing, but a empty space. 
+ </div>
+ 
+   <div class="narrativedialogue">
+If you say so. You will contunie on this path, with no memories of the past that will come with you. The love of your passions and experiences will be forgotten, rerstarting you from a dust, shall you be happy with this choice.
+ </div>
+ 
+  <div class="yourdialogue">
+Ending 2
+ </div>
+
+
+:: YourRoom [yourbedroom] {"position":"850,725","size":"100,100"}
+<div class="Followchat">
+A bright light flashes your eyes, blinding you just a bit before it settles. You remove your arm from your face, letting the surrounding areas consume every part of your view.
+ </div>
+
+ <div class="Followchat">
+The room was quite lively, with toys scattered everywhere, the floor, the bed and stuffed poorly in the closet. On tables and drawers were sticked with colorful, goofy, sdtickers of cartoon characters. You continue wandering around, brushing your fingers on every surface until your eyes lay on:
+ </div>
+ 
+ 
+  </div>
+ 
+ <div class="Yourbedroom_choices">
+
+  <span class="_choices1">
+    (link-goto: "A pile of family photos", "Choice1")
+  </span>
+  
+  <span class="_choices2">
+    (link-goto: "A Toy piano" , "Choice2")
+  </span>
+  
+    <span class="_choices3">
+    (link-goto: "The cloest full of toys" , "Choice3")
+  </span>
+  
+  </div>
+  
+</div>
+
+
+
+:: StoryScript [script]
+/*JavaScript is for music and Stylesheet is for visual*/
+
+
+
+
+
+:: StoryStylesheet [stylesheet]
+tw-sidebar 
+{
+  display: none; 
+}
+
+tw-story[tags~="Menu"] 
+{
+  background-image:url("https://cdn.pixabay.com/photo/2016/02/29/23/06/chicago-1229463_1280.jpg");
+  background-size:cover; 
+}
+.text_box {
+  background-color: rgba(0, 0, 0, 0.9);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 10px;
+}
+.start-button 
+{ 
+  display: flex; /*This helps makes the text inside of the box easily aligned and positioned*/
+  background-color: rgba(255, 255, 255, 0.9); /*The color of the box*/
+  border: 3px solid white; /*This is the boarder line*/
+  
+  justify-content: center; /*Works along with display: flex, helps control the horizontally side to side*/
+  align-items: center;  /*Works along with display: flex, helps control the up-and-down direction*/
+  text-align: center; /*Helps with the text inside horizontal alignment*/
+  padding: 20px; /*It's basically ensure that there are 20 space between the text and boarder line*/
+  font-size: 24px; /*The size of the text*/
+  border-radius: 12px; /*corners of your box rounded instead of sharp.*/
+  
+  transition: 0.3s;
+}
+
+.start-button:hover /*When a player hovers thge button, the background becomes lighter*/
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+.credits-button
+{  
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid white;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 12px;
+  
+  transition: 0.3s;
+}
+
+.button-row 
+{
+  display: flex;
+  justify-content: center;  /* centers the group */
+  gap: 20px;                /* space between buttons */
+  margin-top: 30px;
+}
+
+
+.credits-button:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+
+
+
+/*The button for returning back to the menu*/
+tw-hook[name="returnbtn"] tw-link 
+{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid white;
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 12px;
+  
+  transition: 0.3s;
+  
+  font-size: 25px;
+  font-weight: bold;
+  
+  transition: 0.3s;
+}
+
+tw-hook[name="returnbtn"] tw-link:hover {
+  background-color: Black;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+/* This part is for the hospital level*/
+tw-story[tags~="Hospital"] 
+{
+  background-image:url("https://cdn.pixabay.com/photo/2015/09/03/17/49/hospital-921034_1280.jpg");
+  background-size:cover;
+  animation: fadein 100s;
+}
+
+.Random_doctors_and_nurses {
+  margin: 10px 0;
+  flex-direction: column; /* stack vertically */
+  gap: 1px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 12px;
+
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 12px;
+
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/*Thi is the text for your thoughts that belong to the first passage*/
+.SelfBubble {
+  display: flex;
+  justify-content: flex-start;   /* horizontal alignment */
+  align-items: flex-start;       /* vertical alignment */
+  text-align: left;
+  
+  /*The Text*/
+  font-family: Trebuchet MS;
+  font-size: 25px;
+
+  /*The overall look of the box*/	
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 0px;
+
+  line-height: 1.6;
+
+  padding: 15px;  /* THIS is key */
+  
+}
+
+/*The button for the first passage*/
+.next-button 
+{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid white;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 12px;
+  
+  transition: 0.3s;
+
+}
+
+.next-button:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+
+
+
+
+
+/* This part is for the hospital level part 2*/
+tw-story[tags~="Nexthospital"]::before   /*First layer*/
+{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Puts it behind everything */
+  
+  background-image:url("https://cdn.pixabay.com/photo/2015/09/03/17/49/hospital-921034_1280.jpg");
+  background-size:cover;
+  
+  filter: brightness(0.3);
+  
+  animation: fadein 100s;
+}
+
+
+/* This ensures the story container itself is transparent 
+   so we can see the background behind it */
+tw-story[tags~="Nexthospital"] {
+  background: transparent;
+}
+
+.dialogue {
+
+  /*Determine the shapes, size where it sits in screen*/
+  display: block; /*A solid shape*/  
+  max-width: 500px; 
+  margin: 10px auto;
+  padding: 10px 50px;
+
+  background-color: rgba(0, 0, 0, 0.85); /* Slightly transparent black */
+  border-radius: 0px;
+
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+
+  /*This forces the text box to be in front*/
+  position: relative;   
+  z-index: 999;        
+
+}
+
+
+
+
+/*The first choices*/
+.Choice1button
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 140px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+
+.Choice1button:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+.Choice2button
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 140px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+
+
+
+.Choice2button:hover
+{
+  background-color: black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+.button-row 
+{
+  display: flex;
+  justify-content: center;  /*It seems to put these on the bottom for it to actually work*/
+  margin-top: 30px;
+}
+
+
+
+
+
+
+/*Nexthospital page*/
+tw-story[tags~="Choice12"]::before   /*First layer*/
+{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Puts it behind everything */
+  
+  background-image:url("https://cdn.pixabay.com/photo/2015/09/03/17/49/hospital-921034_1280.jpg");
+  background-size:cover;
+  
+  filter: brightness(0.3);
+  
+  animation: fadein 100s;
+}
+
+
+/* This ensures the story container itself is transparent 
+   so we can see the background behind it */
+tw-story[tags~="Choice12"] {
+  background: transparent;
+}
+
+.Nochoice {
+
+  /*Determine the shapes, size where it sits in screen*/
+  display: block; /*A solid shape*/  
+  max-width: 500px; 
+  margin: 10px auto;
+  padding: 10px 50px;
+
+  background-color: rgba(0, 0, 0, 0.85); /* Slightly transparent black */
+  border-radius: 0px;
+
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+
+  /*This forces the text box to be in front*/
+  position: relative;   
+  z-index: 999;        
+
+}
+
+.Followbutton 
+{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid white;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 12px;
+  
+  transition: 0.3s;
+}
+
+.Followbutton:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+
+
+
+
+
+/*Followpath codes*/
+tw-story[tags~="Continue"]::before   /*First layer*/
+{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Puts it behind everything */
+  
+  background-image:url("https://cdn.pixabay.com/photo/2015/09/03/17/49/hospital-921034_1280.jpg");
+  background-size:cover;
+  
+  filter: brightness(0.10);
+  
+  animation: fadein 100s;
+}
+
+
+/* This ensures the story container itself is transparent 
+   so we can see the background behind it */
+tw-story[tags~="Continue"] {
+  background: transparent;
+}
+
+.Followchat {
+
+  /*Determine the shapes, size where it sits in screen*/
+  display: block; /*A solid shape*/  
+  max-width: 500px; 
+  margin: 10px auto;
+  padding: 10px 50px;
+
+  background-color: rgba(0, 0, 0, 0.85); /* Slightly transparent black */
+  border-radius: 0px;
+
+  color: white;
+  font-family: Trebuchet MS; /*Your voice*/
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+
+  /*This forces the text box to be in front*/
+  position: relative;   
+  z-index: 999;        
+
+}
+
+.Leavebutton 
+{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid white;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 12px;
+  
+  transition: 0.3s;
+}
+
+.Leavebutton:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+
+
+/*Stopping&Dippingpart aka Leavespace passage */
+tw-story[tags~="Leavespace"]::before   /*First layer*/
+{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Puts it behind everything */
+  
+  background-image:url("https://cdn.pixabay.com/photo/2015/09/03/17/49/hospital-921034_1280.jpg");
+  background-size:cover;
+  
+  filter: brightness(0.10);
+  
+  animation: fadein 100s;
+}
+tw-story[tags~="Leavespace"] 
+{
+  background: transparent;
+}
+
+
+/*This code belong in Leavespace, used for for StoppingADippingchat  box text*/
+.StoppingADippingchat {
+
+  /*Determine the shapes, size where it sits in screen*/
+  display: block;  
+  max-width: 500px; 
+  margin: 10px auto;
+  padding: 10px 50px;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 0px;
+
+  color: white;
+  font-family: Trebuchet MS; /*Your voice*/
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+
+  /*This forces the text box to be in front*/
+  position: relative;   
+  z-index: 999;        
+}
+
+.Voicechat {
+
+  /*Determine the shapes, size where it sits in screen*/
+  display: block;  
+  max-width: 500px; 
+  margin: 10px auto;
+  padding: 10px 50px;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 0px;
+
+  color: white;
+  font-family: "Times New Roman", serif; 
+  font-size: 20px;
+  line-height: 1.6;
+ 
+  text-align: center; 
+  line-height: 1.5;
+
+  /*This forces the text box to be in front*/
+  position: relative;   
+  z-index: 999;        
+
+}
+
+
+/*This part of the code is for YourRoom, which is the childhood part*/
+tw-story[tags~="yourbedroom"] 
+{
+  background-image:url("https://raw.githubusercontent.com/WindyVG-Starter/Chicago-s_Song_Project/refs/heads/main/Pictures/Childhood_bedroom.jpg");
+  background-size:cover; 
+}
+.gochildhoodhomebutton
+{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid white;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 12px;
+  
+  transition: 0.3s;
+  
+}
+
+.gochildhoodhomebutton:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+._choices1
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 170px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+
+._choices1:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+._choices2
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 140px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+._choices2:hover
+{
+  background-color: black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+._choices3
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 140px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+._choices3:hover
+{
+  background-color: black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+.Yourbedroom_choices
+{
+  display: flex;
+  justify-content: center;  /*It seems to put these on the bottom for it to actually work*/
+  margin-top: 20px;
+}
+
+
+
+
+
+
+/*One of the choices for the Yourbedroom, which is the family photos*/
+tw-story[tags~="A_Family_photo"] 
+{
+  background-image:url("https://cdn.pixabay.com/photo/2022/12/19/17/18/photos-7666143_1280.jpg");
+  background-size:cover; 
+}
+.Choice1dialogue {
+  background-color: rgba(0, 0, 0, 0.9);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-family: Trebuchet MS; /*Your voice*/
+}
+
+
+/*The code for the toy piano choice from the Yourchildhoodbedroom options*/
+tw-story[tags~="Toy_Piano"] 
+{
+  background-image:url("https://cdn.pixabay.com/photo/2014/06/04/17/53/piano-362251_1280.jpg");
+  background-size:cover; 
+}
+.Choice2dialogue {
+  background-color: rgba(0, 0, 0, 0.9);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-family: Trebuchet MS; /*Your voice*/
+}
+
+/*The code for the Cloest choice from the Yourchildhoodbedroom options*/
+tw-story[tags~="Cloest"] 
+{
+  background-image:url("https://raw.githubusercontent.com/WindyVG-Starter/Chicago-s_Song_Project/refs/heads/main/Pictures/StuffedToys.jpg");
+  background-size:cover; 
+}
+.Choice3dialogue {
+  background-color: rgba(0, 0, 0, 0.9);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-family: Trebuchet MS; /*Your voice*/
+}
+
+
+
+/*College page with the introduce*/
+tw-story[tags~="Firstdorm"] 
+{
+  background-image:url("https://i.pinimg.com/736x/67/53/89/67538922a384c2547347f68bdad66430.jpg");
+  background-size:cover; 
+}
+
+.urvoice {
+
+  /*Determine the shapes, size where it sits in screen*/
+  display: block;  
+  max-width: 500px; 
+  margin: 10px auto;
+  padding: 10px 50px;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 0px;
+
+  color: white;
+  font-family: Trebuchet MS; 
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+
+  /*This forces the text box to be in front*/
+  position: relative;   
+  z-index: 999;        
+
+}
+
+.college1button
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 170px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+
+.college1button:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+.college2button
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 140px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+.college2button:hover
+{
+  background-color: black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+.college3button
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 140px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+.college3button:hover
+{
+  background-color: black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+.Collegechoicesbuttons
+{
+  display: flex;
+  justify-content: center;  /*It seems to put these on the bottom for it to actually work*/
+  margin-top: 20px;
+}
+
+
+/*This code belongs to the Manuscriptpaper*/
+tw-story[tags~="Manu_script"] 
+{
+  background-image:url("https://raw.githubusercontent.com/WindyVG-Starter/Chicago-s_Song_Project/refs/heads/main/Pictures/manuscript.jpg");
+  background-size:cover; 
+}
+
+.Manuscriptpaper1dialogue
+{
+  background-color: rgba(0, 0, 0, 0.9);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-family: Trebuchet MS; /*Your voice*/
+}
+
+
+/*This code belongs to the Photoframe*/
+tw-story[tags~="LoverPhoto"] 
+{
+  background-image:url("https://raw.githubusercontent.com/WindyVG-Starter/Chicago-s_Song_Project/refs/heads/main/Pictures/PhotoOfLovers.jpg");
+  background-size:cover; 
+}
+
+.PhotoFramedialogue
+{
+  background-color: rgba(0, 0, 0, 0.9);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-family: Trebuchet MS; /*Your voice*/
+}
+
+
+
+/*This code belongs to the ExitDoor*/
+tw-story[tags~="exitdorm"] 
+{
+  background-image:url("https://raw.githubusercontent.com/WindyVG-Starter/Chicago-s_Song_Project/refs/heads/main/Pictures/DormDoor.jpg");
+  background-size:cover; 
+}
+
+.exitdormdialogue
+{
+  background-color: rgba(0, 0, 0, 0.9);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-family: Trebuchet MS; /*Your voice*/
+}
+
+
+
+/*This code belongs to the hospitalplace codes*/
+tw-story[tags~="hospitalplace"] 
+{
+  background-image:url("https://cdn.pixabay.com/photo/2015/09/03/17/49/hospital-921034_1280.jpg");
+  background-size:cover; 
+}
+
+.Beddialogue
+{
+  background-color: rgba(0, 0, 0, 0.9);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-family: Trebuchet MS; /*Your voice*/
+}
+
+
+
+
+/*This code belongs to the hospitalbed codes*/
+tw-story[tags~="hospitalbed"] 
+{
+  background-image:url("https://raw.githubusercontent.com/WindyVG-Starter/Chicago-s_Song_Project/refs/heads/main/Pictures/Bedhospital.jpg");
+  background-size:cover; 
+}
+
+.Beddialogue
+{
+  background-color: rgba(0, 0, 0, 0.9);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-family: Trebuchet MS; /*Your voice*/
+}
+
+
+.Sleepbutton
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 170px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+
+.Sleepbutton:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+.Nahbutton
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 140px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+.Nahbutton:hover
+{
+  background-color: black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+
+.narrativedialogue {
+
+  /*Determine the shapes, size where it sits in screen*/
+  display: white; /*A solid shape*/  
+  max-width: 500px; 
+  margin: 10px auto;
+  padding: 10px 50px;
+
+  background-color: rgba(0, 0, 0, 0.85); /* Slightly transparent black */
+  border-radius: 0px;
+
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+
+  /*This forces the text box to be in front*/
+  position: relative;   
+  z-index: 999;        
+
+}
+
+
+.yourdialogue {
+
+  /*Determine the shapes, size where it sits in screen*/
+  display: white; /*A solid shape*/  
+  max-width: 500px; 
+  margin: 10px auto;
+  padding: 10px 50px;
+
+  background-color: #FFFFFF; /* Slightly transparent black */
+  border-radius: 0px;
+
+  color: black;
+  font-family: Trebuchet MS;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+
+  /*This forces the text box to be in front*/
+  position: relative;   
+  z-index: 999;        
+
+}
+
+
+.Nobutton
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 170px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+
+.Nobutton:hover
+{
+  background-color: Black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
+
+.Yesbutton
+{
+  display: inline-block;
+  margin: 40px auto;
+  width: 140px;
+  
+  text-align: center;/* Centers the text inside the box */
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white; /* Subtle transparent white */
+  border-radius: 10px;
+  transition: all 0.2s; /* Smooth hover effect */
+}
+.Yesbutton:hover
+{
+  background-color: black;
+  cursor: pointer;
+   transform: scale(1.05);
+}
